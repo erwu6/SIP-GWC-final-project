@@ -1,0 +1,381 @@
+/* 
+
+This CSS file is contains the CSS rule sets for 
+    - index.html
+    - any universal elements that all pages use
+
+The CSS for the take-action.html is in take-action.css
+
+*/
+
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
+body,
+html {
+  height: 100%;
+  font-size: 20px; /* Change the font size*/
+  font-family: "Amatic SC", sans-serif;
+  line-height: 1.5em; /* Change the line height size*/
+  margin: 0em;
+  color: beige; /* Change the font color*/
+  background-color: linear-gradient(
+    white,
+    #4effef,
+    #4effef,
+    #4ecbff
+  ); /* Change the background color */
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(white, #4effef, #4effef, #4ecbff);
+  background-position: center;
+  background-color: #4ecbff;
+  background-repeat: no-repeat;
+}
+.about-us {
+  text-align: center;
+  background-image: linear-gradient(#4ecbff,#4ecbff,#4effef,white);
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+h1 {
+  letter-spacing: 5px;
+  font-size: 70px;
+  /*TODO: Change the font-family property to your linked font*/
+  font-family: "Shadows Into Light", cursive;
+  color: #43d6b9ff;
+  text-align: center;
+  line-height: 70px;
+}
+
+/*TODO: Change the font-family property to your linked font*/
+h2 {
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #43d6b9ff;
+  text-align: center;
+  line-height: 1.3em;
+}
+/* I put all h3s to center in the middle*/
+h3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.abouth2{
+  color: lightblue;
+
+}
+.abouth3{
+  font-size:40px;
+  line-height:60px;
+  padding-left:50px;
+  padding-right:50px;
+  color: steelblue;
+  /*-webkit-text-stroke: .0000001px honeydew;*/
+}
+
+.page-header-action {
+  -webkit-text-stroke: 2px green;
+}
+
+.pintro {
+  color: seagreen;
+  text-decoration: underline overline dashed #4ca9f9;
+}
+.mySlides {display:none;}
+
+/*TODO: Change the color of a link when a person hovers over it*/
+
+/* I am not sure if we need this so I will leave it as a comment -erika*/
+/*p a {
+  color: lime;
+  text-decoration: none;
+}*/
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+/* All of these TODOs are optional. You should change the styling based on your mockup */
+
+/* TODO (optional): Change the background color and/or border style */
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #07d2e8;
+  border-style: solid;
+  border-color: #66FFCC;
+}
+
+/* TODO (optional): Change the font size*/
+
+li.nav {
+  /* Styling for the <li class="nav"> element */
+  float: right;
+  font-size: 30px;
+}
+
+/* TODO (optional): Change the font color, decoration, and/or case */
+
+li.nav a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: #33ccff;
+  -webkit-text-stroke: 0.01px green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* TODO (optional): Change the background color and/or font color when the mouse hovers over an item */
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #33cccc;
+  color: #43d6b9ff;
+}
+
+/************************************************/
+/*********** CSS FOR FLEXBOX HEADING ************/
+/************************************************/
+
+/* TODO: Review the CSS properties to the flexbox container for title and intro text */
+.flex-container {
+  display: flex; /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+
+  /* Design properties */
+  background-image: linear-gradient(90deg, #e6ffe6, #00cc99, #66FFCC);
+  padding: 5px;
+
+  /* Positioning properties */
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 40%; /* Change this value to move the box up or down */
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/* TODO: Review the CSS properties to the flex item for the heading (the left box) */
+.heading-home {
+  padding: 6%;
+  color: #ff1aff;
+  font-size: 80px;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/* TODO: Review the CSS properties to the flex item for the intro text (the right box) */
+.intro-text {
+  background-image: linear-gradient(
+    to bottom right,
+    #33ccff,
+    #33ccff,
+    #3366ff
+  ); /* Add your own background color */
+  padding: 4%;
+  margin: 3%;
+  color: #0D38D3; /* Add the color of your font */
+  font-size: 30px; /* Add your font size*/
+  letter-spacing: 2px; /* Adds space between letters */
+  line-height: 1.4em; /* Adds space between lines */
+  text-align: center;
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/************************************************/
+/*************** PARALLAX SCROLL ****************/
+/************************************************/
+
+/*-----------TEXT SECTIONS-----------*/
+
+/* TODO (optional): Change the background color and/or text alignment */
+
+.text-section {
+  background-color: #6699FF;
+  padding: 20px 45px;
+  margin: 35px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 50px;
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+/* TODO: Add the CSS selector for each image to the collective image rule set */
+
+.main-message,
+.image-one,
+.image-two,
+.image-three,
+.image-four,
+.image-five{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #33ccff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+
+  /* TODO: Add the property to create the parallax scrolling effect here */
+  background-attachment: fixed;
+}
+
+/* TODO: Replace the current image URL with your own. This is the top image on your homepage. */
+.main-message {
+  background-image: url("https://cdn.glitch.com/b59d2dff-d985-41d6-844f-0ee5a80cc28d%2FIMG-3015.JPG?v=1592941969192");
+}
+
+/* TODO: Replace the current image URL with your own */
+.image-one {
+  background-image: url("https://cdn.glitch.com/b59d2dff-d985-41d6-844f-0ee5a80cc28d%2FIMG-3026.JPG?v=1593034234878");
+}
+
+/* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
+.image-two {
+  background-image: url("https://cdn.glitch.com/b59d2dff-d985-41d6-844f-0ee5a80cc28d%2FIMG-3038.JPG?v=1593117596101");
+}
+
+/* TODO: Add more background images by repeating the process above */
+
+.image-three {
+  background-image: url("https://cdn.glitch.com/b59d2dff-d985-41d6-844f-0ee5a80cc28d%2FIMG-3019.JPG?v=1592942326464");
+}
+
+.image-four {
+  background-image: url("https://cdn.glitch.com/b59d2dff-d985-41d6-844f-0ee5a80cc28d%2FIMG-3041.JPG?v=1593118918227");
+}
+
+.image-five {
+  background-image: url("");
+}
+/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
+.attributions {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
+
+/* TODO: Add a breakpoint if the screen is 700px or less */
+@media mediatype and (max-width: 600px) {
+  /* CSS rule sets */
+
+  .flex-container {
+    flex-wrap: wrap;
+    top: 20%;
+  }
+}
+.aboutbuttons {
+  display: flex;
+  justify-content: center;
+}
+/* TODO: Add additional breakpoints based on your website's design*/
+.pbackground {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-text:center;
+}
+
+.pimg {
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+/*Buttons*/
+
+.pbuttons {
+  background-color: #32B7DB;
+  border: none;
+  font-size: 20px;
+  padding: 25px;
+  color: white;
+  border-radius: 20px;
+  width: 500px;
+  list-style-type: none;
+}
+.abbutton{
+  margin:30px;
+  background-color: #32B7DB;
+  border: none;
+  font-size: 20px;
+  padding: 25px;
+  color: white;
+  border-radius: 20px;
+  width: 300px;
+  list-style-type: none;
+  margin-top:none;
+}
+
+button:hover {
+  background-color: #6699FF;
+}
+.mySlides{
+  display: block;
+  margin-left: 290px;
+  margin-right: auto;
+  width: 190%;
+}
+.onslides{
+  font-family: "Libre Baskerville", serif;
+  font-size: 120px;
+  padding: 1px;
+  margin: 0;
+  position: absolute;
+  width:1500px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 80px;
+  color:honeydew;
+}
+.what{
+  display:inline;
+  font-size: 20px;
+  text-align:center;
+  width:90px;
+  color: navy;
+  text-decoration: underline overline dashed lightblue;
+}
+.bottom{
+  background-color: steelblue;
+  text-align:center;
+}
+.what:hover{
+  background-color: honeydew;
+}
