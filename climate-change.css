@@ -1,0 +1,54 @@
+p {
+  color: navy;
+  font-family: monospace;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+h3 {
+  font-size: 30px;
+  color: honeydew;
+}
+h1{
+  font-family: 'Anton', sans-serif;
+  -webkit-text-stroke: 0.01px green;
+}
+.img {
+  width: 100%;
+}
+.secimg{
+  max-width:350px;
+  border: 2px solid steelblue;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.ontop {
+  font-family: "Libre Baskerville", serif;
+  font-size: 33px;
+  background-color: honeydew;
+  padding: 5px;
+  margin: none;
+  position: absolute;
+  top: 57%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  line-height: 40px;
+}
+.questions{
+  background-color: springgreen;
+  padding-left: 0;
+  padding-right: 0;
+}
+.websites{
+  Text-align:center;
+  font-size:20px;
+  color: steelblue;
+  -webkit-text-stroke: .8px navy;
+  text-decoration: underline dashed #3c57dd;
+}
+.sticktogether{
+  display:flex;
+  flex-flow: row wrap;
+  max-font-size:20px;
+}
