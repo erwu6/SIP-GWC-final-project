@@ -68,6 +68,10 @@ h3 {
   justify-content: center;
   align-content: center;
 }
+p{
+    color:steelblue;
+    margin:auto;
+}
 .abouth2{
   color: lightblue;
 
